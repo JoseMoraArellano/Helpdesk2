@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!-- Hago que el sitio sea responsivo para dispositivos celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Vinculo la hoja de estilos de Bootstrap para diseño de componentes -->
+    <link rel="stylesheet" href="public/bootstrap/bootstrap.min.css">
+        <!-- Vinculo mi hoja de estilos personalizada -->
+    <link rel="stylesheet" href="public/css/menu.css">
+        <!-- Defino el titulo de la pagina-->
+    <title>Login</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le9EH4qAAAAAF8oRGGCFe_ek-awPsklNEiSv49N"></script>
+</head>
+<body>
+    <!-- Envoltorio principal de la página con la clase de animación fadeInDown -->
+    <div class="wrapper fadeInDown">
+        <!-- Contenedor del formulario de login -->
+        <div id="formContent">
+
+            <!-- Tabs Titles -->
+
+        
+
+            <!-- Icono -->
+            <!-- Icono del sistema y título -->
+            <div class="fadeIn first">
+            <!-- Imagen que representa el ícono del sistema -->
+            <img src="public/img/IconoF.png" id="icon" alt="User Icon" />
+            <!-- Título principal del sistema -->
+            <h1>Help-Desk</h1>
+
+            </div>       
+            <!-- Formulario de Login -->
+            <form id="frmLogin" method="POST" onsubmit="return loginUsuario()">
+                <!-- Campo para el nombre de usuario, obligatorio -->
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" required>
+                <!-- Campo para la contraseña, obligatorio -->
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required>
+                    <input type="hidden" id="recaptchaToken" name="recaptchaToken">
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" class="fadeIn fourth" value="Entrar">
+            </form>
+
+        
+
+            <!-- Pie del formulario con opción para contactar al administrador -->
+            <div id="formFooter">
+            <!-- Enlace que abre un modal para contactar al administrador -->
+            <a class="underlineHover" href="#" data-toggle="modal" data-target="#modalContacto">Contactar con el administrador</a>
+            <br>
+            <br>
+            <a class="underlineHover" href="#" data-toggle="modal" data-target="#modalRecuperarContrasena">Resetear contraseña</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal para mostrar información de contacto del administrador -->
+<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <!-- Encabezado del modal con botón para cerrarlo -->
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div>
+     <!-- Cuerpo del modal donde se proporciona el número de contacto -->
+    <div class="modal-body">
+        Si no tienes una credencial llama al : 
+        <br>
+        5548380767 
+        <br>
+        Ext: 4115 / 4126 / 4123
+    </div>
+    <!-- Pie del modal con botón para cerrarlo -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>       
+    </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!--Recuperar contraseña -->
+<div class="modal fade" id="modalRecuperarContrasena" tabindex="-1" role="dialog" aria-labelledby="recuperarContrasenaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="recuperarContrasenaLabel">Recuperar Contraseña</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Cuerpo del modal con el formulario para ingresar el correo electrónico -->
+            <div class="modal-body">
+                <form id="formRecuperarContrasena">
+                    <div class="form-group">
+                        <label for="correoRecuperar">Ingrese su correo electrónico</label>
+                        <input type="email" class="form-control" id="correoRecuperar" name="correoRecuperar" placeholder="Tu correo" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" form="formRecuperarContrasena" class="btn btn-primary">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Vinculo las librerías de JavaScript necesarias para Bootstrap y otras funcionalidades -->
+    <script src="public/jquery/jquery-3.6.0.min.js"></script>
+    <script src="public/bootstrap/popper.min.js"></script>
+    <script src="public/bootstrap/bootstrap.min.js"></script>
+    <!-- Librería para mostrar alertas personalizadas con SweetAlert2 -->
+    <script src="public/sweetalert2/sweetalert2@11.js"></script>
+    <!-- Archivo JavaScript que contiene la lógica del login de usuarios -->
+    <script src="public/js/usuarios/login.js"></script>
+</body>
+
+</html>

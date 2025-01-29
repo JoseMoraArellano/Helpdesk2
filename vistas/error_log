@@ -1,0 +1,8 @@
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Undefined array key "usuario" in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 53
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Trying to access array offset on null in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 53
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Undefined array key "usuario" in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 64
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Trying to access array offset on null in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 64
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Undefined array key "usuario" in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 85
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Trying to access array offset on null in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 85
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Undefined array key "usuario" in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 91
+[29-Oct-2024 22:56:09 UTC] PHP Warning:  Trying to access array offset on null in /home/p392re6y8ukf/public_html/helpdesk.fianzasfiducia.com/vistas/header.php on line 91
